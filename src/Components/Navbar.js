@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 //import "../src/App.css";
 
 export default function Navbar(props) {
@@ -13,7 +13,8 @@ export default function Navbar(props) {
             className={`navbar navbar-expand-lg bg-${props.mode} ${props.mode === 'light' ? "" : 'navbar-dark'}`}
         >
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">{props.title}</Link>
+                {/* <Link className="navbar-brand" to="/">{props.title}</Link> */}
+                <a className="navbar-brand" href="#">{props.title}</a>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -31,11 +32,11 @@ export default function Navbar(props) {
                 >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <a className="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="about">{props.titleAbout}</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 
                     {/* <div className="d-flex border rounded-pill mx-2 bg-white" >
