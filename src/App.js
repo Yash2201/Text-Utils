@@ -19,7 +19,7 @@ function App() {
     if(mode === 'light')
     {
         setMode('dark');
-        document.body.style.background = '#79838d'; //'#6f89a0';
+        document.body.style.background = 'rgb(4 39 67)'; //'#6f89a0';
         //document.body.classList.add(`bg-${mode}`);
         showAlert("Dark Mode Enabled Successfully","success");
     }
